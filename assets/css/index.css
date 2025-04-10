@@ -350,7 +350,7 @@ i:hover {
     .container {
         flex-direction: column;
         width: 100vw;
-        min-height: 100vmax;
+        min-height: 200vmax;
         padding: 2em;
         gap: 2em;
     }
