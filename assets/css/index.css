@@ -326,6 +326,9 @@ i:hover {
         display: flex;
         flex-direction: column;
     }
+    .container {
+        min-height: 100vh;
+    }
     #about {
         width: 80vw;
         padding: 2em;  
