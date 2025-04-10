@@ -320,7 +320,7 @@ i:hover {
   transition: 0.4s ease-in-out 0.3s;
 }
 /* Mobile viewport tweaks */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     body {
         min-height: 200vmax;
         display: flex;
