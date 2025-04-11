@@ -370,7 +370,6 @@ i:hover {
     }
     #projects {
         width: 80vw;
-        min-height: 30vh;
         padding: 2em;   
     }
     .project {
