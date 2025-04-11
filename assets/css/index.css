@@ -416,4 +416,10 @@ i:hover {
         width: 100px;
         height: 100px;
     }
+    .button {
+        padding: 1rem 2rem;
+    }
+    .content {
+        padding: 0.9rem;
+    }
 }
