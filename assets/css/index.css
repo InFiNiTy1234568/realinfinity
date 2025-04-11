@@ -19,7 +19,7 @@
 a {
     text-decoration: none;
 }
-body {
+html {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,6 +29,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: brightness(0.4) blur(10px);
+    overflow: hidden;
 }
 ul {
     list-style: none;
@@ -323,8 +324,8 @@ i:hover {
 }
 /* Mobile viewport tweaks */
 @media screen and (max-width: 600px) {
-    body {
-        min-height: 200vmax;
+    html {
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
     }
@@ -352,7 +353,7 @@ i:hover {
     .container {
         flex-direction: column;
         width: 100vw;
-        min-height: 200vmax;
+        min-height: 100vh;
         padding: 2em;
         margin-top: 10em;
         gap: 2em;
