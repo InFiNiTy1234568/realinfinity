@@ -29,7 +29,6 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: brightness(0.4) blur(10px);
-    overflow: hidden;
 }
 ul {
     list-style: none;
