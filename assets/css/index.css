@@ -27,6 +27,9 @@ html {
     width: 100vw;
     background-image: url('../images/background/background.jpg');
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-repeat: no-repeat;
 }
 body {
@@ -331,9 +334,13 @@ i:hover {
 /* Mobile viewport tweaks */
 @media screen and (max-width: 600px) {
     html {
-        min-height: 100vh;
+        min-height: 200vmax;
         display: flex;
         flex-direction: column;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+        background-size: cover;
     }
     #about {
         width: 80vw;
