@@ -333,6 +333,9 @@ i:hover {
 }
 /* Mobile viewport tweaks */
 @media screen and (max-width: 600px) {
+    * {
+        line-height: 1.2;
+    }
     html, body {
         min-height: 200vmax;
         display: flex;
