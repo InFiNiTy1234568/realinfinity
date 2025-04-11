@@ -212,15 +212,6 @@ i:hover {
     flex-shrink: 1;
     padding: 0.75rem;
 }
-.project-info {
-    height: 100px;  
-    display: flex;
-    flex-direction: column;
-}
-.project-info p {
-    line-height: 1.2;
-    color: rgba(255, 255, 255, 0.4)
-}
 .image {
     display: flex;
     position: relative;
@@ -412,9 +403,12 @@ i:hover {
     .project-content p {
         display: none;
     }
+    .project-content h3 {
+        font-size: 16px;
+    }
     .image {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
     .button {
         padding: 1rem 2rem;
