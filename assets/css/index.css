@@ -352,6 +352,7 @@ i:hover {
         width: 100vw;
         min-height: 200vmax;
         padding: 2em;
+        margin-top: 10em;
         gap: 2em;
     }
     #projects {
