@@ -1,135 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>InFiNiTy - a few words about me</title>
-        <link rel="stylesheet" href="assets/css/index.css" type="text/css">
-        <script src="https://kit.fontawesome.com/eae8f83d5b.js" crossorigin="anonymous"></script>
-        <link rel="icon" href="assets/images/avatar/infinity.png" type="image/x-icon">
-        <meta name="description" content="Cześć, nazywam się Karol, w sieci znany pod wieloma nickami ( InFiNiTy, Neo, Nobody, Limitless ). Z zawodu jestem informatykiem, jednak moją główną pasją jest programowanie. W wolnym czasie lubię również relaks przy muzyce lub sport we wszelkiej postaci.">
-        <meta name="keywords" content="InFiNiTy, Neo, Nobody, Limitless, Karol, programista, informatyka, Discord Bot Developer, JavaScript, Node.js, MongoDB, MySQL">
-        <meta name="author" content="InFiNiTy">
-        <meta name="robots" content="index, follow">
-        <meta name="theme-color" content="#5439cc">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InFiNiTy - who the fuck am I?</title>
+    <script src="https://kit.fontawesome.com/eae8f83d5b.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/images/avatar/infinity.png" type="image/x-icon">
+    <meta name="description" content="Cześć, nazywam się Karol, w sieci znany pod wieloma nickami ( InFiNiTy, Neo, Nobody, Limitless ). Z zawodu jestem informatykiem, jednak moją główną pasją jest programowanie. W wolnym czasie lubię również relaks przy muzyce lub sport we wszelkiej postaci.">
+    <meta name="keywords" content="InFiNiTy, Neo, Nobody, Limitless, Karol, programista, informatyka, Discord Bot Developer, JavaScript, Node.js, MongoDB, MySQL">
+    <meta name="author" content="InFiNiTy">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#5439cc">
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <script src="assets/scripts/index.js" defer></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a id="avatar" class="navbar-item" href="./">
+                        <img src="assets/images/avatar/infinity.png" alt="InFiNiTy">
+                    </a>
+                    
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item">
+                            Strona główna
+                        </a>
+                        
+                        <a class="navbar-item">
+                            Projekty
+                        </a>
+                        
+                        <div class="navbar-item has-dropdown">
+                            <a class="navbar-link">
+                                Więcej
+                            </a>
+                            
+                            <div class="navbar-dropdown is-right">
+                                <a class="navbar-item">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-user"></i>
+                                    </span>
+                                    O mnie
+                                </a>
+                                <a class="navbar-item">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-code"></i>
+                                    </span>
+                                    Technologie
+                                </a>
+                                <a class="navbar-item">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-at"></i>
+                                    </span>
+                                    Kontakt
+                                </a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item has-text-danger">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-bug"></i>
+                                    </span>
+                                    Zgłoś błąd / podatność
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-64x64">
+                                        <img class="is-rounded" src="assets/images/avatar/infinity.png" alt="InFiNiTy">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">InFiNiTy</p>
+                                    <p class="subtitle is-6">@realinfinity</p>
+                                    <div class="tags">
+                                        <span class="tag"><img src="assets/images/games/mc.png" width="20" height="20" alt="Minecraft">&nbsp;Minecraft</span>
+                                        <span class="tag"><img src="assets/images/games/cstrike.png" width="20" height="20" alt="Counter-Strike 1.6">&nbsp;Counter-Strike 1.6</span>
+                                        <span class="tag"><img src="assets/images/games/lol.png" width="20" height="20" alt="League of Legends">&nbsp;League of Legends</span>
+                                        <span class="tag"><img src="assets/images/games/valorant.png" width="20" height="20" alt="Valorant">&nbsp;Valorant</span>
+                                        <span class="tag"><img src="assets/images/games/gtav.png" width="20" height="20" alt="Grand Theft Auto V">&nbsp;Grand Theft Auto V</span>
+                                        <span class="tag"><i class="fas fa-code"></i>&nbsp;Vibe Coder</span>
 
-    </head>
-    <body>
-        <section class="container">
-            <div class="column">
-                <div class="block">
-                    <div id="about">
-                        <div class="block">
-                            <figure id="avatar">
-                                <img src="assets/images/avatar/infinity.png" alt="Avatar" width="200" height="200">
-                            </figure>
-                        </div>
-                        <div class="block">
-                            <h1>InFiNiTy</h1>
-                        </div>    
-                        <div class="block">
-                            <p class="has-text-centered">Cześć, nazywam się Karol i mam 22 lata. W sieci znany pod wieloma nickami ( InFiNiTy, Neo, Nobody, Limitless ). Z zawodu jestem informatykiem, jednak moją główną pasją jest programowanie. W wolnym czasie lubię również relaks przy muzyce lub sport we wszelkiej postaci.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div id="skills">
-                        <div class="block">
-                            <h2>Mój skillset</h2>
-                        </div>
-                        <div class="block">
-                            <ul>
-                                <li>
-                                    <span data-tooltip="HTML5">
-                                        <i class="fa-brands fa-html5 fa-2x" id="html"></i>
-                                    </span>
-                                </li>
-                                <li>
-                                    <span data-tooltip="CSS3">
-                                        <i class="fa-brands fa-css3-alt fa-2x" id="css"></i> </li>
-                                    </span>
-                                <li>
-                                    <span data-tooltip="JavaScript">
-                                        <i class="fa-brands fa-js fa-2x" id="js"></i> 
-                                    </span>
-                                </li>
-                                <li>
-                                    <span data-tooltip="Node.js">
-                                        <i class="fa-brands fa-node-js fa-2x" id="node"></i>
-                                    </span>
-                                </li>
-                                <li>
-                                    <span data-tooltip="MongoDB/MySQL">
-                                        <i class="fa-solid fa-database fa-2x" id="db"></i>
-                                    </span>
-                                </li>
-                                <li>
-                                    <span data-tooltip="Discord Bot Developer">
-                                        <i class="fa-brands fa-discord fa-2x" id="discord"></i>
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">            
-                <div id="projects">
-                    <div class="block">
-                        <h1>Projekty, w których uczestniczę</h1>
-                    </div>
-                    <div class="block">
-                        <div class="card">
-                                <div class="content">
-                                    <div class="project">
-                                        <div class="project-left">
-                                            <figure class="image">
-                                                <span data-tooltip="Universe - Unlimited possibilities!">
-                                                    <img src="assets/images/logos/universe.png" alt="Universe">
-                                                </span>
-                                            </figure>
-                                        </div>
-                                        <div class="project-content">
-                                            <span class="tag">
-                                                Developer / Founder
-                                            </span>
-                                            <h3>Universe - Unlimited possibilities!</h3>
-                                            <p>Jest to prowadzony przeze mnie projekt bota Discord, oferującego wiele systemów ( moderację, automatyzację, rozrywkę ) oraz wiele przydatnych narzędzi</p>
-                                        </div>
                                     </div>
                                 </div>
-                                <footer class="footer">
-                                    <a href="https://discord.gg/KysuhshTYV" class="button">Przejdź</a>
-                                </footer>
                             </div>
-                    </div>
-                    <div class="block">
-                        <div class="card">
+                            
                             <div class="content">
-                                <div class="project">
-                                    <div class="project-left">
-                                        <figure class="image">
-                                            <span data-tooltip="AdviceBot - Stwórz swój idealny serwer już dziś!">
-                                                <img class="is-rounded" src="assets/images/logos/advice.png" alt="AdviceBot">
-                                            </span>
-                                        </figure>
-                                    </div>
-                                    <div class="project-content">
-                                        <span class="tag">
-                                            Developer / Designer
-                                        </span>
-                                        <h3>AdviceBot - Stwórz swój idealny serwer już dziś!</h3>
-                                        <p>Jest to projekt bota Discord, który w swojej ofercie posiada tworzenie serwerów oraz ich konfigurację, automoderowanie serwerów, komendy 4fun i wiele więcej!</p>
-                                    </div>
-                                </div>
+                                Cześć, nazywam się Karol i mam 22 lata. W sieci znany jestem pod wieloma nickami ( InFiNiTy, Neo, Nobody, Limitless, Synyxe ). Uwielbiam grać we wszelkiego rodzaju gry, jednak specyficznie podobają mi się gry MMORPG/MOBA/FPS.
                             </div>
-                            <footer class="footer">
-                                <a href="https://dc.advicebot.info" class="button">Przejdź</a>
-                            </footer>
                         </div>
                     </div>
                 </div>
+                <div class="column">
+                    <div class="grid">
+                        <div class="cell">
+                            <div class="box">
+                                <div class="content">
+                                    <h1 class="title is-4">Czym się zajmuję?</h1>
+                                    <p class="has-text-justified">
+                                        Z zawodu jestem informatykiem, jednak moją główną pasją jest programowanie. Określiłbym siebie bardziej jako vibe codera, który lubi nowe wyzwania i chętnie się uczy.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="box">
+                                <div class="content">
+                                    <h1 class="title is-4">Czym się zajmuję?</h1>
+                                    <p class="has-text-justified">
+                                        Z zawodu jestem informatykiem, jednak moją główną pasją jest programowanie. Określiłbym siebie bardziej jako vibe codera, który lubi nowe wyzwania i chętnie się uczy.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
-        </section>
-    </body>
+        </div>
+    </section>
+</body>
 </html>
