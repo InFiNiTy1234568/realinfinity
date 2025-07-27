@@ -42,3 +42,37 @@ document.addEventListener('click', function(e) {
     }
   });
 });
+
+// Footer visibility logic for mobile
+const footer = document.querySelector('footer.footer');
+if (footer) {
+  function checkFooterVisibility() {
+    if (window.innerWidth <= 1024) {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      
+      // Show footer when user is near the bottom of the page
+      if (scrollTop + windowHeight >= documentHeight - 50) {
+        footer.classList.add('visible');
+      } else {
+        footer.classList.remove('visible');
+      }
+    }
+  }
+  
+  // Check on scroll and resize
+  window.addEventListener('scroll', checkFooterVisibility);
+  window.addEventListener('resize', checkFooterVisibility);
+  
+  // Initial check
+  checkFooterVisibility();
+}
+
+// Set cell indices for staggered animation in social-media grid
+document.addEventListener('DOMContentLoaded', () => {
+  const socialMediaCells = document.querySelectorAll('#social-media .cell');
+  socialMediaCells.forEach((cell, index) => {
+    cell.style.setProperty('--cell-index', index);
+  });
+});
