@@ -66,3 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cell.style.setProperty('--cell-index', index);
   });
 });
+
+// Force Bulma dark mode by adding the appropriate class to <html> if user prefers dark mode
+
+
