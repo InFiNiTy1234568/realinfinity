@@ -1,156 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction - InFiNiTy</title>
-    <script src="https://kit.fontawesome.com/eae8f83d5b.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="assets/images/avatar/infinity.png" type="image/x-icon">
-    <meta name="description" content="Strona w budowie - InFiNiTy">
-    <meta name="theme-color" content="#5439cc">
-    <link rel="stylesheet" href="assets/styles/index.css">
-    <link rel="stylesheet" href="assets/styles/reset.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-    <script src="assets/scripts/index.js" defer></script>
-    <style>
-        .construction-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-        
-        .construction-icon {
-            animation: bounce 2s infinite;
-        }
-        
-        .progress-bar {
-            animation: progress 3s ease-in-out infinite;
-        }
-        
-        .floating-icon {
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        .floating-icon:nth-child(2) {
-            animation-delay: 0.5s;
-        }
-        
-        .floating-icon:nth-child(3) {
-            animation-delay: 1s;
-        }
-        
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-10px);
-            }
-            60% {
-                transform: translateY(-5px);
-            }
-        }
-        
-        @keyframes progress {
-            0% { width: 0%; }
-            50% { width: 70%; }
-            100% { width: 100%; }
-        }
-        
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-        
-        .construction-card {
-            backdrop-filter: blur(10px);
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .glow-text {
-            text-shadow: 0 0 10px rgba(84, 57, 204, 0.5);
-        }
-    </style>
-</head>
-<body>
-    <div class="construction-bg">
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>InFiNiTy - O mnie</title>
+        <script src="https://kit.fontawesome.com/eae8f83d5b.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="../assets/images/avatar/infinity.png" type="image/x-icon">
+        <meta name="description" content="Cześć, nazywam się Karol, w sieci znany pod wieloma nickami ( InFiNiTy, Neo, Nobody, Limitless ). Z zawodu jestem informatykiem, jednak moją główną pasją jest programowanie. W wolnym czasie lubię również relaks przy muzyce lub sport we wszelkiej postaci.">
+        <meta name="keywords" content="InFiNiTy, Neo, Nobody, Limitless, Karol, programista, informatyka, Discord Bot Developer, JavaScript, Node.js, MongoDB, MySQL">
+        <meta name="author" content="InFiNiTy">
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#5439cc">
+        <link rel="stylesheet" href="../assets/styles/about.css">
+        <link rel="stylesheet" href="../assets/styles/reset.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+        <script src="../assets/scripts/index.js" defer></script>
+    </head>
+    <body>
         <section class="section">
             <div class="container">
-                <div class="columns is-centered">
-                    <div class="column is-8">
-                        <div class="card construction-card has-text-centered">
-                            <div class="card-content">
-                                <div class="content">
-                                    <div class="mb-6">
-                                        <span class="icon is-large construction-icon">
-                                            <i class="fas fa-hard-hat fa-3x has-text-warning"></i>
-                                        </span>
-                                    </div>
-                                    
-                                    <!-- Title -->
-                                    <h1 class="title is-2 has-text-white glow-text mb-4">
-                                        🚧 Strona w budowie 🚧
-                                    </h1>
-                                    
-                                    <!-- Subtitle -->
-                                    <p class="subtitle is-5 has-text-light mb-6">
-                                        Pracuję nad czymś niesamowitym!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a id="avatar" class="navbar-item" href="../index.html">
+                            <img src="../assets/images/avatar/infinity.png" alt="InFiNiTy">
+                        </a>
                         
-                        <!-- Floating Icons -->
-                        <div class="has-text-centered mt-6">
-                            <span class="icon is-medium floating-icon has-text-white mr-4">
-                                <i class="fas fa-tools fa-2x"></i>
-                            </span>
-                            <span class="icon is-medium floating-icon has-text-white mr-4">
-                                <i class="fas fa-cog fa-2x"></i>
-                            </span>
-                            <span class="icon is-medium floating-icon has-text-white">
-                                <i class="fas fa-wrench fa-2x"></i>
-                            </span>
-                        </div>
-                        
-                        <!-- Contact Info -->
-                        <div class="card construction-card mt-6">
-                            <div class="card-content">
-                                <div class="content has-text-centered">
-                                    <h3 class="title is-4 has-text-white mb-4">
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    
+                    <div id="navbarBasicExample" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item" href="../index.html">
+                                Strona główna
+                            </a>
+                            
+                            <a class="navbar-item" href="../projects/index.html">
+                                Projekty
+                            </a>
+                            
+                            <div class="navbar-item has-dropdown">
+                                <a class="navbar-link">
+                                    Więcej
+                                </a>
+                                
+                                <div class="navbar-dropdown is-right">
+                                    <a class="navbar-item" href="../about/index.html">
                                         <span class="icon">
-                                            <i class="fas fa-envelope"></i>
+                                            <i class="fa-solid fa-user"></i>
                                         </span>
-                                        Masz pytania?
-                                    </h3>
-                                    <p class="has-text-light mb-4">
-                                        Skontaktuj się ze mną, aby dowiedzieć się więcej o tym projekcie!
-                                    </p>
-                                    <div class="buttons is-centered">
-                                        <a href="mailto:realinfinity2003@gmail.com" class="button is-primary">
-                                            <span class="icon">
-                                                <i class="fas fa-envelope"></i>
-                                            </span>
-                                            <span>Email</span>
-                                        </a>
-                                        <a href="https://discord.com/users/918150003048984616" class="button is-info">
-                                            <span class="icon">
-                                                <i class="fab fa-discord"></i>
-                                            </span>
-                                            <span>Discord</span>
-                                        </a>
-                                    </div>
+                                        O mnie
+                                    </a>
+                                    <a class="navbar-item" href="../tech/index.html">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-code"></i>
+                                        </span>
+                                        Technologie
+                                    </a>
+                                    <a class="navbar-item" href="../contact/index.html">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-at"></i>
+                                        </span>
+                                        Kontakt
+                                    </a>
+                                    <hr class="navbar-divider">
+                                    <a class="navbar-item has-text-danger" href="mailto:realinfinity2003@gmail.com">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-bug"></i>
+                                        </span>
+                                        Zgłoś błąd / podatność
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </nav>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <div class="block">
+                            <h1 class="title is-1">O mnie słów parę</h1>
+                        </div>
+                        <div class="block">
+                            <p>
+                                Moje zainteresowanie informatyką zaczęło się już w szkole podstawowej, kiedy zacząłem uczyć się programowania w Scratch. W tym również czasie zacząłem również interesować się tworzeniem stron internetowych, opartych na podstawowej znajomości HTML, CSS i JavaScript. Nie powiedziałbym, że byłem dobry w programowaniu, ale zawsze byłem zainteresowany tym, jak działają strony internetowe i różnego rodzaju aplikacje i jak mogę je tworzyć.
+                            </p>
+                        </div>
+                        <div class="block">
+                            <p>
+                                Moje ścieżki z programowaniem zeszły się bardziej, kiedy rozpocząłem swoją przygodę z moddingiem gry Counter-Strike 1.6, wtedy głównym językiem programowania był C++ / Pawn, narzędziem zaś AMXX Studio ( jako że silnik gry był oparty na Source Engine, AMXX było tylko frameworkiem do rozszerzenia funkcjonalności gry). Łatwo nie było, bo ograniczała mnie technologia, jednak sprawiało mi to przyjemność i ogrom satysfakcji, kiedy w końcu udało mi się stworzyć coś, co działało.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="../assets/images/other/amxx-studio.jpg" alt="AMXX Studio">
+                        <div class="block">
+                            <p class="subtitle is-7 has-text-grey">
+                                A tutaj przedstawienie narzędzia, którym posługiwałem się za dzieciaka :&gt;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-reversed">     
+                    <div class="column">
+                        <img src="../assets/images/other/universe.png" alt="Universe">
+                        <div class="block">
+                            <p class="subtitle is-7 has-text-grey">
+                                <i class="fa-solid fa-arrow-up"></i> Tutaj przedstawienie mojego pierwszego bota Discord, Universe, którego tworzyłem w 2020 roku. Projekt również został porzucony na bardzo długi czas ( po prostu nie miałem na to czasu ).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="block">
+                            <h1 class="title is-1">A co było potem? Co dalej?</h1>
+                        </div>
+                        <div class="block">
+                            <p>
+                                Od początku technikum ( 2019 ), moją uwagę zwróciło tworzenie forów internetowych, z oparciem silnika MyBB / IPS.
+                                Podjąłem swoje pierwsze kroki w kierunku otwarcia sieci serwerów gier, jednak finalnie projekt nie wypalił i został porzucony na bardzo długi czas. Planuję jednak wrócić do tego tematu w przyszłości.
+                            </p>
+                        </div>
+                        <div class="block">
+                            <p>
+                                W 2020 roku zacząłem interesować się tworzeniem botów dla Discord, opartych na frameworku NodeJS, popularnej paczce Discord.js ( której używam po dziś dzień ), oraz MongoDB. W tym czasie zacząłem również interesować się tworzeniem stron internetowych, opartych na znajomości HTML, CSS i JavaScript, z wykorzystaniem różnych frameworków CSS ( Bootstrap, Bulma, TailwindCSS ).
+                            </p>
+                        </div>
+                        <div class="block">
+                            <p>
+                                Teraz powoli wracam do swoich zainteresowań, po długim czasie wypalenia, braku chęci i nawału własnych spraw.
+                                Mam nadzieje, że wkrótce będę mógł zacząć tworzyć coś nowego i ciekawego, przydatnego i dla mnie i dla innych.
+                            </p>
+                        </div>
+                            <div class="block">
+                                <h3 class="title is-5">
+                                    Potrzebujesz bota Discord, aplikacji lub po prostu pomocy?
+                                </h3>
+                                <p>
+                                    Napisz do mnie na <a href="https://discord.com/users/918150003048984616">Discord</a> lub wyślij e-mail na <a href="mailto:realinfinity2003@gmail.com">realinfinity2003@gmail.com</a>.
+                                </p>
+                            </div>
+                    </div>
                 </div>
             </div>
         </section>
-    </div>
-</body>
-</html> 
+        <footer class="footer has-text-centered-mobile">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <p class="has-text-white">
+                            Wykonanie: <a href="https://discord.com/users/918150003048984616"><strong>InFiNiTy</strong></a> &copy; 2025 Wszelkie prawa zastrzeżone.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <div class="tabs is-fullwidth">
+                            <ul>
+                              <li><a href="../projects/index.html">Projekty</a></li>
+                              <li><a href="./index.html">O mnie</a></li>
+                              <li><a href="../tech/index.html">Technologie</a></li>
+                              <li><a href="../contact/index.html">Kontakt</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>   
+            </div>
+        </footer>
+    </body>
+</html>

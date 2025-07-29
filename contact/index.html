@@ -1,156 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction - InFiNiTy</title>
-    <script src="https://kit.fontawesome.com/eae8f83d5b.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="assets/images/avatar/infinity.png" type="image/x-icon">
-    <meta name="description" content="Strona w budowie - InFiNiTy">
-    <meta name="theme-color" content="#5439cc">
-    <link rel="stylesheet" href="assets/styles/index.css">
-    <link rel="stylesheet" href="assets/styles/reset.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-    <script src="assets/scripts/index.js" defer></script>
-    <style>
-        .construction-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-        
-        .construction-icon {
-            animation: bounce 2s infinite;
-        }
-        
-        .progress-bar {
-            animation: progress 3s ease-in-out infinite;
-        }
-        
-        .floating-icon {
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        .floating-icon:nth-child(2) {
-            animation-delay: 0.5s;
-        }
-        
-        .floating-icon:nth-child(3) {
-            animation-delay: 1s;
-        }
-        
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-10px);
-            }
-            60% {
-                transform: translateY(-5px);
-            }
-        }
-        
-        @keyframes progress {
-            0% { width: 0%; }
-            50% { width: 70%; }
-            100% { width: 100%; }
-        }
-        
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-        
-        .construction-card {
-            backdrop-filter: blur(10px);
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .glow-text {
-            text-shadow: 0 0 10px rgba(84, 57, 204, 0.5);
-        }
-    </style>
-</head>
-<body>
-    <div class="construction-bg">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Skontaktuj się ze mną | InFiNiTy</title>
+        <script src="https://kit.fontawesome.com/eae8f83d5b.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="../assets/images/avatar/infinity.png" type="image/x-icon">
+        <meta name="description" content="Cześć, nazywam się Karol, w sieci znany pod wieloma nickami ( InFiNiTy, Neo, Nobody, Limitless ). Z zawodu jestem informatykiem, jednak moją główną pasją jest programowanie. W wolnym czasie lubię również relaks przy muzyce lub sport we wszelkiej postaci.">
+        <meta name="keywords" content="InFiNiTy, Neo, Nobody, Limitless, Karol, programista, informatyka, Discord Bot Developer, JavaScript, Node.js, MongoDB, MySQL">
+        <meta name="author" content="InFiNiTy">
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#5439cc"> 
+        <link rel="stylesheet" href="../assets/styles/contact.css">
+        <link rel="stylesheet" href="../assets/styles/reset.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+        <script src="../assets/scripts/index.js" defer></script>
+        <script src="../assets/scripts/contact.js" defer></script>
+    </head>
+    <body>
         <section class="section">
             <div class="container">
-                <div class="columns is-centered">
-                    <div class="column is-8">
-                        <div class="card construction-card has-text-centered">
-                            <div class="card-content">
-                                <div class="content">
-                                    <div class="mb-6">
-                                        <span class="icon is-large construction-icon">
-                                            <i class="fas fa-hard-hat fa-3x has-text-warning"></i>
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                        <a id="avatar" class="navbar-item" href="../index.html">
+                            <img src="../assets/images/avatar/infinity.png" alt="InFiNiTy">
+                        </a>
+                        
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    
+                    <div id="navbarBasicExample" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item" href="../index.html">
+                                Strona główna
+                            </a>
+                            
+                            <a class="navbar-item" href="../projects/index.html">
+                                Projekty
+                            </a>
+                            
+                            <div class="navbar-item has-dropdown">
+                                <a class="navbar-link">
+                                    Więcej
+                                </a>
+                                
+                                <div class="navbar-dropdown is-right">
+                                    <a class="navbar-item" href="../about/index.html">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-user"></i>
                                         </span>
-                                    </div>
-                                    
-                                    <!-- Title -->
-                                    <h1 class="title is-2 has-text-white glow-text mb-4">
-                                        🚧 Strona w budowie 🚧
-                                    </h1>
-                                    
-                                    <!-- Subtitle -->
-                                    <p class="subtitle is-5 has-text-light mb-6">
-                                        Pracuję nad czymś niesamowitym!
-                                    </p>
+                                        O mnie
+                                    </a>
+                                    <a class="navbar-item" href="../tech/index.html">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-code"></i>
+                                        </span>
+                                        Technologie
+                                    </a>
+                                    <a class="navbar-item" href="../contact/index.html">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-at"></i>
+                                        </span>
+                                        Kontakt
+                                    </a>
+                                    <hr class="navbar-divider">
+                                    <a class="navbar-item has-text-danger" href="mailto:realinfinity2003@gmail.com">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-bug"></i>
+                                        </span>
+                                        Zgłoś błąd / podatność
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Floating Icons -->
-                        <div class="has-text-centered mt-6">
-                            <span class="icon is-medium floating-icon has-text-white mr-4">
-                                <i class="fas fa-tools fa-2x"></i>
-                            </span>
-                            <span class="icon is-medium floating-icon has-text-white mr-4">
-                                <i class="fas fa-cog fa-2x"></i>
-                            </span>
-                            <span class="icon is-medium floating-icon has-text-white">
-                                <i class="fas fa-wrench fa-2x"></i>
-                            </span>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column has-text-centered-mobile">
+                        <div class="block">
+                            <h1 class="title is-1">Skontaktuj się ze mną</h1>
                         </div>
-                        
-                        <!-- Contact Info -->
-                        <div class="card construction-card mt-6">
-                            <div class="card-content">
-                                <div class="content has-text-centered">
-                                    <h3 class="title is-4 has-text-white mb-4">
-                                        <span class="icon">
-                                            <i class="fas fa-envelope"></i>
-                                        </span>
-                                        Masz pytania?
-                                    </h3>
-                                    <p class="has-text-light mb-4">
-                                        Skontaktuj się ze mną, aby dowiedzieć się więcej o tym projekcie!
-                                    </p>
-                                    <div class="buttons is-centered">
-                                        <a href="mailto:realinfinity2003@gmail.com" class="button is-primary">
-                                            <span class="icon">
-                                                <i class="fas fa-envelope"></i>
-                                            </span>
-                                            <span>Email</span>
-                                        </a>
-                                        <a href="https://discord.com/users/918150003048984616" class="button is-info">
-                                            <span class="icon">
-                                                <i class="fab fa-discord"></i>
-                                            </span>
-                                            <span>Discord</span>
-                                        </a>
+                        <div class="block">
+                            <p class="has-text-white">
+                                Jeśli masz pytania, sugestie lub chcesz się ze mną skontaktować, użyj formularza poniżej. Postaram się odpowiedzieć na Twoje pytania w ciągu 24 godzin.
+                            </p>
+                        </div>
+                        <h2 class="subtitle is-4">Możesz też obczaić moje social media 👀</h2>
+                        <div class="block"> 
+                            <div class="box">
+                                <div class="fixed-grid has-2-cols">
+                                    <div class="grid">
+                                        <div class="cell">
+                                            <div class="box has-text-centered">
+                                                <a class="has-text-white" href="https://discord.com/users/918150003048984616">
+                                                    <img src="../assets/images/brands/discord.png" width="58" height="58" alt="Discord">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="cell">
+                                            <div class="box has-text-centered">
+                                                <a class="has-text-white" href="https://github.com/InFiNiTy1234568">
+                                                    <i class="fa-brands fa-github fa-4x"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="cell">
+                                            <div class="box has-text-centered">
+                                                <a class="has-text-white" href="https://open.spotify.com/user/315pus52kjbaxynjlow2a3knuvjq?si=bdd96476081d484b">
+                                                    <img src="../assets/images/brands/spotify.png" width="58" height="58" alt="Spotify">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="cell">
+                                            <div class="box has-text-centered">
+                                                <a class="has-text-white" href="https://steamcommunity.com/profiles/76561199756958573/">
+                                                    <i class="fa-brands fa-steam fa-4x"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="cell is-col-span-2">
+                                            <div class="box has-text-centered">
+                                                <a class="has-text-white" href="https://www.tiktok.com/@realinfinity7323">
+                                                    <i class="fa-brands fa-tiktok fa-4x"></i>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="column">
+                        <div class="contact-form-container">
+                            <form id="contact-form" novalidate>
+                            <div class="field">
+                                <label class="label">Tytuł <span class="has-text-danger">*</span></label>
+                                <div class="control has-icons-left">
+                                  <input class="input" name="title" type="text" placeholder="Wprowadź tytuł wiadomości" required minlength="3" maxlength="100">
+                                  <span class="icon is-small is-left">
+                                    <i class="fa-solid fa-pencil"></i>
+                                  </span>
+                                </div>
+                              </div>
+                              
+                              <div class="field">
+                                <label class="label">Temat <span class="has-text-danger">*</span></label>
+                                <div class="control has-icons-left">
+                                  <input class="input" name="subject" type="text" placeholder="Wprowadź temat wiadomości" required minlength="5" maxlength="200">
+                                  <span class="icon is-small is-left">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                  </span>
+                                </div>
+                              </div>
+                              
+                              <div class="field">
+                                <label class="label">E-mail <span class="has-text-danger">*</span></label>
+                                <div class="control has-icons-left has-icons-right">
+                                  <input class="input" name="email" type="email" placeholder="Wprowadź swój e-mail" required>
+                                  <span class="icon is-small is-left">
+                                    <i class="fa-solid fa-envelope"></i>
+                                  </span>
+                                </div>
+                              </div>
+                              
+                              <div class="field">
+                                <label class="label">Wiadomość <span class="has-text-danger">*</span></label>
+                                <div class="control">
+                                  <textarea class="textarea" name="message" placeholder="Wprowadź swoją wiadomość" required minlength="10" maxlength="1000" rows="6"></textarea>
+                                </div>
+                              </div>
+                              
+                              <div class="field is-grouped">
+                                <div class="control">
+                                  <button type="submit" class="button is-link">
+                                    <span class="icon">
+                                      <i class="fa-solid fa-paper-plane"></i>
+                                    </span>
+                                    <span>Wyślij wiadomość</span>
+                                  </button>
+                                  <button type="reset" class="button is-light">
+                                    <span class="icon">
+                                      <i class="fa-solid fa-rotate-left"></i>
+                                    </span>
+                                    <span>Wyczyść</span>
+                                  </button>
+                                </div>
+                              </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-    </div>
-</body>
-</html> 
+        <footer class="footer has-text-centered-mobile">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <p class="has-text-white">
+                            Wykonanie: <a href="https://discord.com/users/918150003048984616"><strong>InFiNiTy</strong></a> &copy; 2025 Wszelkie prawa zastrzeżone.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <div class="tabs is-fullwidth">
+                            <ul>
+                              <li><a href="../projects/index.html">Projekty</a></li>
+                              <li><a href="../about/index.html">O mnie</a></li>
+                              <li><a href="../tech/index.html">Technologie</a></li>
+                              <li><a href="./index.html">Kontakt</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>   
+            </div>
+        </footer>
+    </body>
+</html>
