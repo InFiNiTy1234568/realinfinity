@@ -46,7 +46,9 @@
         transform: translateX(0);
     }
 }
-
+a.navbar-item:hover {
+    background-color: transparent !important;
+}
 /* ===== SOCIAL MEDIA GRID ANIMATIONS ===== */
 .grid .cell {
     opacity: 0;
