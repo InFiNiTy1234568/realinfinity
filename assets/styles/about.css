@@ -38,7 +38,9 @@ body {
         transform: translateY(0);
     }
 }
-
+a.navbar-item:hover {
+    background-color: transparent !important;
+}
 /* ===== IMAGE ANIMATIONS ===== */
 .columns .column img {
     opacity: 0;
