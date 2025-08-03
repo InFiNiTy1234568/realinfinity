@@ -28,7 +28,7 @@ nav.navbar {
     border: 1px solid var(--accent);
     border-radius: 10px;
     padding: 0.5rem 2rem;
-    animation: slideDown 0.9s ease-out 0.1s both;
+    animation: slideDown 0.4s ease-out 0.1s both;
     opacity: 0;
     transform: translateY(-20%);
 }
@@ -43,7 +43,7 @@ a.navbar-item {
     color: #eee;
     opacity: 0;
     transform: translateY(30%);
-    animation: slideUp 0.9s ease-out both;
+    animation: slideUp 0.5s ease-out both;
     animation-delay: calc(0.9s + var(--index, 0) * 0.1s);
 }
 a.navbar-item:hover, a.navbar-item:focus-within, a.navbar-item:focus {
@@ -82,14 +82,14 @@ a.button:hover {
 .box.has-background-light {
     opacity: 0;
     transform: scale(0.8);
-    animation: fadeScale 0.8s 0.3s ease-out forwards;
+    animation: fadeScale 2s 0.1s ease-out forwards;
     animation-delay: calc(0.9s + var(--box-index, 0) * 0.1s);
 }
 
 .tag.is-light {
     opacity: 0;
     transform: translateY(50px);
-    animation: fadeup 0.6s 0.8s ease-out forwards;
+    animation: fadeup 1.5s 0.3s ease-out forwards;
     animation-delay: calc(0.9s + var(--tag-index, 0) * 0.1s);
 }
 
