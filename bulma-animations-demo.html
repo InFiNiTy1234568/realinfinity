@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulma Creative Entrance Animations Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/styles/bulma-animations.css">
+    <script src="https://kit.fontawesome.com/eae8f83d5b.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            min-height: 200vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .demo-section {
+            margin: 4rem 0;
+            padding: 2rem 0;
+        }
+        .demo-title {
+            color: white;
+            text-align: center;
+            margin-bottom: 3rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .spacer {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <button class="button is-primary" onclick="resetBulmaAnimations()">
+            <i class="fas fa-redo"></i> Reset Animations
+        </button>
+    </div>
+
+    <div class="spacer">
+        <div>
+            <h1 class="title is-1 has-text-white">Bulma Creative Entrance Animations</h1>
+            <p class="subtitle has-text-white">Scroll down to see the magic happen ✨</p>
+        </div>
+    </div>
+
+    <!-- Animation 1: Floating Box with Glow Effect -->
+    <section class="section demo-section">
+        <div class="container">
+            <h2 class="title is-2 demo-title">
+                <i class="fas fa-cube"></i> Animation 1: Floating Box with Glow Effect
+            </h2>
+            
+            <div class="columns">
+                <div class="column is-4">
+                    <div class="box">
+                        <article class="media">
+                            <div class="media-left">
+                                <figure class="image is-64x64">
+                                    <i class="fas fa-rocket fa-3x has-text-primary"></i>
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <strong>Rocket Launch</strong>
+                                        <br>
+                                        This box floats in with a beautiful glow effect, perfect for highlighting important content.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <div class="column is-4">
+                    <div class="box animate-delay-1">
+                        <div class="content has-text-centered">
+                            <i class="fas fa-star fa-2x has-text-warning"></i>
+                            <h4 class="title is-4">Premium Feature</h4>
+                            <p>Delayed animation for staggered effects. Notice the subtle bounce and glow.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="column is-4">
+                    <div class="box animate-delay-2">
+                        <div class="content has-text-centered">
+                            <i class="fas fa-heart fa-2x has-text-danger"></i>
+                            <h4 class="title is-4">Loved by Users</h4>
+                            <p>Multiple boxes can animate in sequence with different delays.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animation 2: Cascading Tags with Bounce -->
+    <section class="section demo-section">
+        <div class="container">
+            <h2 class="title is-2 demo-title">
+                <i class="fas fa-tags"></i> Animation 2: Cascading Tags with Bounce
+            </h2>
+            
+            <div class="columns">
+                <div class="column is-6">
+                    <div class="box">
+                        <h4 class="title is-4">Programming Languages</h4>
+                        <div class="tags">
+                            <span class="tag is-primary">JavaScript</span>
+                            <span class="tag is-link">TypeScript</span>
+                            <span class="tag is-info">Python</span>
+                            <span class="tag is-success">Node.js</span>
+                            <span class="tag is-warning">React</span>
+                            <span class="tag is-danger">Vue.js</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="column is-6">
+                    <div class="box">
+                        <h4 class="title is-4">Skills & Technologies</h4>
+                        <div class="tags animate-delay-1">
+                            <span class="tag is-dark">CSS3</span>
+                            <span class="tag is-primary">HTML5</span>
+                            <span class="tag is-link">Bulma</span>
+                            <span class="tag is-info">MongoDB</span>
+                            <span class="tag is-success">MySQL</span>
+                            <span class="tag is-warning">Git</span>
+                            <span class="tag is-danger">Docker</span>
+                            <span class="tag is-light">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="columns">
+                <div class="column">
+                    <div class="notification is-info">
+                        <strong>Animation Details:</strong> Each tag cascades in with a 3D rotation effect and bouncy timing function. 
+                        Tags animate individually with staggered delays for a smooth, professional appearance.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animation 3: Rising Footer with Shimmer -->
+    <section class="section demo-section">
+        <div class="container">
+            <h2 class="title is-2 demo-title">
+                <i class="fas fa-magic"></i> Animation 3: Rising Footer with Shimmer Effect
+            </h2>
+            
+            <div class="content has-text-centered has-text-white">
+                <p class="subtitle has-text-white">
+                    The footer below rises from the bottom with a beautiful shimmer effect that sweeps across it.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Animation -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <div class="columns">
+                <div class="column is-4">
+                    <h4 class="title is-4">Connect</h4>
+                    <div class="buttons is-centered">
+                        <a class="button is-primary">
+                            <span class="icon">
+                                <i class="fab fa-twitter"></i>
+                            </span>
+                            <span>Twitter</span>
+                        </a>
+                        <a class="button is-link">
+                            <span class="icon">
+                                <i class="fab fa-linkedin"></i>
+                            </span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a class="button is-dark">
+                            <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="column is-4">
+                    <h4 class="title is-4">Quick Links</h4>
+                    <div class="content">
+                        <ul>
+                            <li><a href="#" class="has-text-dark">About</a></li>
+                            <li><a href="#" class="has-text-dark">Projects</a></li>
+                            <li><a href="#" class="has-text-dark">Contact</a></li>
+                            <li><a href="#" class="has-text-dark">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="column is-4">
+                    <h4 class="title is-4">Newsletter</h4>
+                    <div class="field has-addons">
+                        <div class="control is-expanded">
+                            <input class="input" type="email" placeholder="Enter your email">
+                        </div>
+                        <div class="control">
+                            <button class="button is-primary">
+                                <span class="icon">
+                                    <i class="fas fa-paper-plane"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+            
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <p class="has-text-dark">
+                            <strong>© 2024 InFiNiTy</strong> - Creative Bulma Animations
+                        </p>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="tags">
+                            <span class="tag is-primary">Creative</span>
+                            <span class="tag is-link">Animated</span>
+                            <span class="tag is-success">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/scripts/bulma-animations.js"></script>
+</body>
+</html>

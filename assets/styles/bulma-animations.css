@@ -1,0 +1,211 @@
+/* =================================
+   CREATIVE BULMA ENTRANCE ANIMATIONS
+   ================================= */
+
+/* Animation 1: Floating Box with Glow Effect for div.box */
+@keyframes float-in-glow {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) scale(0.8);
+        box-shadow: 0 0 0 rgba(84, 57, 204, 0);
+        filter: blur(10px);
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 20px 40px rgba(84, 57, 204, 0.3);
+        filter: blur(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        box-shadow: 0 10px 30px rgba(84, 57, 204, 0.1);
+        filter: blur(0px);
+    }
+}
+
+/* Animation 2: Cascading Tags with Bounce for div.tags */
+@keyframes cascade-bounce {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px) rotateY(-90deg);
+    }
+    60% {
+        opacity: 0.8;
+        transform: translateX(10px) rotateY(10deg);
+    }
+    80% {
+        transform: translateX(-5px) rotateY(-5deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) rotateY(0deg);
+    }
+}
+
+/* Animation 3: Rising Footer with Shimmer Effect for footer.footer */
+@keyframes rise-shimmer {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+        background-position: -100% 0;
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateY(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        background-position: 100% 0;
+    }
+}
+
+/* =================================
+   ANIMATION CLASSES
+   ================================= */
+
+/* Box Animation */
+div.box {
+    animation: float-in-glow 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    animation-delay: var(--animation-delay, 0s);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+div.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(84, 57, 204, 0.2);
+}
+
+/* Tags Animation - Each tag animates with staggered delay */
+div.tags {
+    animation: cascade-bounce 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+    animation-delay: var(--animation-delay, 0s);
+    opacity: 0;
+}
+
+div.tags .tag {
+    animation: cascade-bounce 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+    animation-delay: calc(var(--tag-index, 0) * 0.1s + var(--animation-delay, 0s));
+    opacity: 0;
+    transform-origin: center;
+}
+
+/* Footer Animation with Shimmer Effect */
+footer.footer {
+    animation: rise-shimmer 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    animation-delay: var(--animation-delay, 0s);
+    opacity: 0;
+    background: linear-gradient(
+        90deg,
+        var(--bulma-footer-background-color, #fafafa) 25%,
+        rgba(255, 255, 255, 0.2) 50%,
+        var(--bulma-footer-background-color, #fafafa) 75%
+    );
+    background-size: 200% 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+footer.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    animation: shimmer-sweep 2s ease-in-out 1s forwards;
+}
+
+@keyframes shimmer-sweep {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* =================================
+   UTILITY CLASSES FOR TIMING
+   ================================= */
+
+/* Staggered animation delays */
+.animate-delay-1 { --animation-delay: 0.2s; }
+.animate-delay-2 { --animation-delay: 0.4s; }
+.animate-delay-3 { --animation-delay: 0.6s; }
+.animate-delay-4 { --animation-delay: 0.8s; }
+.animate-delay-5 { --animation-delay: 1.0s; }
+
+/* Tag index variables for staggered tag animations */
+.tag:nth-child(1) { --tag-index: 0; }
+.tag:nth-child(2) { --tag-index: 1; }
+.tag:nth-child(3) { --tag-index: 2; }
+.tag:nth-child(4) { --tag-index: 3; }
+.tag:nth-child(5) { --tag-index: 4; }
+.tag:nth-child(6) { --tag-index: 5; }
+.tag:nth-child(7) { --tag-index: 6; }
+.tag:nth-child(8) { --tag-index: 7; }
+.tag:nth-child(9) { --tag-index: 8; }
+.tag:nth-child(10) { --tag-index: 9; }
+
+/* =================================
+   INTERSECTION OBSERVER SUPPORT
+   ================================= */
+
+/* Classes for controlling when animations trigger */
+.animate-on-scroll {
+    opacity: 0;
+    animation-play-state: paused;
+}
+
+.animate-on-scroll.animate-in {
+    animation-play-state: running;
+}
+
+/* =================================
+   DARK THEME SUPPORT
+   ================================= */
+
+[data-theme="dark"] div.box {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] div.box:hover {
+    box-shadow: 0 15px 35px rgba(84, 57, 204, 0.3);
+}
+
+[data-theme="dark"] footer.footer {
+    background: linear-gradient(
+        90deg,
+        var(--bulma-footer-background-color, #363636) 25%,
+        rgba(255, 255, 255, 0.1) 50%,
+        var(--bulma-footer-background-color, #363636) 75%
+    );
+}
+
+/* =================================
+   REDUCED MOTION SUPPORT
+   ================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    div.box,
+    div.tags,
+    div.tags .tag,
+    footer.footer {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+    
+    footer.footer::before {
+        display: none;
+    }
+}
