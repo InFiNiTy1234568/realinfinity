@@ -1,92 +1,87 @@
 <!DOCTYPE html>
-<html lang="pl" data-theme="dark">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>InFiNiTy - O mnie</title>
-        <script src="https://kit.fontawesome.com/eae8f83d5b.js" crossorigin="anonymous"></script>
-        <link rel="icon" href="../assets/images/avatar/infinity.png" type="image/x-icon">
-        <meta name="description" content="Cześć, nazywam się Karol, w sieci znany pod wieloma nickami ( InFiNiTy, Neo, Nobody, Limitless ). Z zawodu jestem informatykiem, jednak moją główną pasją jest programowanie. W wolnym czasie lubię również relaks przy muzyce lub sport we wszelkiej postaci.">
-        <meta name="keywords" content="InFiNiTy, Neo, Nobody, Limitless, Karol, programista, informatyka, Discord Bot Developer, JavaScript, Node.js, MongoDB, MySQL">
-        <meta name="author" content="InFiNiTy">
-        <meta name="robots" content="index, follow">
-        <meta name="theme-color" content="#5439cc">
-        <link rel="stylesheet" href="../assets/styles/about.css">
-        <link rel="stylesheet" href="../assets/styles/reset.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-        <script src="../assets/scripts/index.js" defer></script>
-    </head>
-    <body>
-        <section class="section">
-            <div class="container">
-                <nav class="navbar" role="navigation" aria-label="main navigation">
-                    <div class="navbar-brand">
-                        <a id="avatar" class="navbar-item" href="../index.html">
-                            <img src="../assets/images/avatar/infinity.png" alt="InFiNiTy">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cześć, nazywam się Karol, w sieci znany pod wieloma nickami ( InFiNiTy, Neo, Nobody, Limitless ). Z zawodu jestem informatykiem, jednak moją główną pasją jest programowanie. W wolnym czasie lubię również relaks przy muzyce lub sport we wszelkiej postaci.">
+    <meta name="keywords" content="InFiNiTy, Neo, Nobody, Limitless, Karol, programista, informatyka, Discord Bot Developer, JavaScript, Node.js, MongoDB, MySQL">
+    <meta name="author" content="InFiNiTy">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#5439cc">
+    <title>InFiNiTy | O mnie</title>
+    <link rel="icon" href="../assets/img/avatar/infinity.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <script src="../assets/js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/eae8f83d5b.js" crossorigin="anonymous"></script>
+    <style>
+        .box {
+            height: 100% !important;
+        }
+        img {
+            border-radius: 12px;
+            width: 100%;
+        }
+        @media screen and (max-width: 1023px) {
+            .columns:nth-child(2) {
+                flex-direction: column-reverse;
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="section" id="nav">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <a id="avatar" href="./index.html" class="navbar-item">
+                        <img src="../assets/img/avatar/infinity.png" alt="InFiNiTy's avatar">
+                    </a>
+                    <a role="button" class="navbar-burger" data-target="main-nav">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu" id="main-nav">
+                    <div class="navbar-end">
+                        <a href="../index.html" class="navbar-item">
+                            Strona główna
                         </a>
-                        
-                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
-                            <span aria-hidden="true"></span>
+                        <a href="./index.html" class="navbar-item">
+                            O mnie
+                        </a>
+                        <a href="./projects/index.html" class="navbar-item">
+                            Projekty
+                        </a>
+                        <a href="./tech/index.html" class="navbar-item">
+                            Technologie
+                        </a>
+                        <a href="./contact/index.html" class="navbar-item">
+                            Kontakt
                         </a>
                     </div>
-                    
-                    <div id="navbarBasicExample" class="navbar-menu">
-                        <div class="navbar-end">
-                            <a class="navbar-item" href="../index.html">
-                                Strona główna
-                            </a>
-                            
-                            <a class="navbar-item" href="../projects/index.html">
-                                Projekty
-                            </a>
-                            
-                            <div class="navbar-item has-dropdown">
-                                <a class="navbar-link">
-                                    Więcej
-                                </a>
-                                
-                                <div class="navbar-dropdown is-right">
-                                    <a class="navbar-item" href="../about/index.html">
-                                        <span class="icon">
-                                            <i class="fa-solid fa-user"></i>
-                                        </span>
-                                        O mnie
-                                    </a>
-                                    <a class="navbar-item" href="../tech/index.html">
-                                        <span class="icon">
-                                            <i class="fa-solid fa-code"></i>
-                                        </span>
-                                        Technologie
-                                    </a>
-                                    <a class="navbar-item" href="../contact/index.html">
-                                        <span class="icon">
-                                            <i class="fa-solid fa-at"></i>
-                                        </span>
-                                        Kontakt
-                                    </a>
-                                    <hr class="navbar-divider">
-                                    <a class="navbar-item has-text-danger" href="mailto:realinfinity2003@gmail.com">
-                                        <span class="icon">
-                                            <i class="fa-solid fa-bug"></i>
-                                        </span>
-                                        Zgłoś błąd / podatność
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </section>
-        <section class="section">
-            <div class="container">
-                <div class="columns">
-                    <div class="column">
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h1 class="title is-1">Moja historia</h1>
+            <h2 class="subtitle">
+                Ta strona poświęcona jest całokształtowi mojego życia, związanego z programowaniem i obcowaniem z komputerami.
+            </h2>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="box has-background-light">
                         <div class="block">
-                            <h1 class="title is-1">O mnie słów parę</h1>
+                            <h1 class="title">O mnie słów parę</h1>
                         </div>
                         <div class="block">
                             <p>
@@ -99,27 +94,33 @@
                             </p>
                         </div>
                     </div>
-                    <div class="column">
-                        <img src="../assets/images/other/amxx-studio.jpg" alt="AMXX Studio">
+                </div>
+                <div class="column">
+                    <div class="box has-background-light">
+                        <img src="../assets/img/other/amxx-studio.jpg" alt="AMXX Studio">
                         <div class="block">
-                            <p class="subtitle is-7 has-text-grey">
-                                A tutaj przedstawienie narzędzia, którym posługiwałem się za dzieciaka :&gt;
+                            <p class="subtitle is-7 has-text-white">
+                                <i class="fa-solid fa-arrow-up" aria-hidden="true"></i> A tutaj przedstawienie narzędzia, którym posługiwałem się za dzieciaka :&gt;
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="columns is-reversed">     
-                    <div class="column">
-                        <img src="../assets/images/other/universe.png" alt="Universe">
+            </div>
+            <div class="columns">     
+                <div class="column">
+                    <div class="box has-background-light">
+                        <img src="../assets/img/other/universe.png" alt="Universe">
                         <div class="block">
-                            <p class="subtitle is-7 has-text-grey">
-                                <i class="fa-solid fa-arrow-up"></i> Tutaj przedstawienie mojego pierwszego bota Discord, Universe, którego tworzyłem w 2020 roku. Projekt również został porzucony na bardzo długi czas ( po prostu nie miałem na to czasu ).
+                            <p class="subtitle is-7 has-text-white">
+                                <i class="fa-solid fa-arrow-up" aria-hidden="true"></i> Tutaj przedstawienie mojego pierwszego bota Discord, Universe, którego tworzyłem w 2020 roku. Projekt również został porzucony na bardzo długi czas ( po prostu nie miałem na to czasu ).
                             </p>
                         </div>
                     </div>
-                    <div class="column">
+                </div>
+                <div class="column">
+                    <div class="box has-background-light">
                         <div class="block">
-                            <h1 class="title is-1">A co było potem? Co dalej?</h1>
+                            <h1 class="title is-2">A co było potem? Co dalej?</h1>
                         </div>
                         <div class="block">
                             <p>
@@ -138,38 +139,39 @@
                                 Mam nadzieje, że wkrótce będę mógł zacząć tworzyć coś nowego i ciekawego, przydatnego i dla mnie i dla innych.
                             </p>
                         </div>
-                            <div class="block">
-                                <h3 class="title is-5">
-                                    Potrzebujesz bota Discord, aplikacji lub po prostu pomocy?
-                                </h3>
-                                <p>
-                                    Napisz do mnie na <a href="https://discord.com/users/918150003048984616">Discord</a> lub wyślij e-mail na <a href="mailto:realinfinity2003@gmail.com">realinfinity2003@gmail.com</a>.
-                                </p>
-                            </div>
+                        <div class="block">
+                            <h3 class="title is-5">
+                                Potrzebujesz bota Discord, aplikacji lub po prostu pomocy?
+                            </h3>
+                            <p>
+                                Napisz do mnie na <a href="https://discord.com/users/918150003048984616">Discord</a> lub wyślij e-mail na <a href="mailto:realinfinity2003@gmail.com">realinfinity2003@gmail.com</a>.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <footer class="footer has-text-centered-mobile">
-            <div class="container">
-                <div class="columns is-vcentered">
-                    <div class="column">
-                        <p class="has-text-white">
-                            Wykonanie: <a href="https://discord.com/users/918150003048984616"><strong>InFiNiTy</strong></a> &copy; 2025 Wszelkie prawa zastrzeżone.
-                        </p>
+        </div>
+    </section>
+    <footer class="footer has-text-centered-mobile has-background-light">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column">
+                    <p class="has-text-white">
+                        Wykonanie: <a href="https://discord.com/users/918150003048984616"><strong>InFiNiTy</strong></a> © 2025 Wszelkie prawa zastrzeżone.
+                    </p>
+                </div>
+                <div class="column">
+                    <div class="tabs is-fullwidth">
+                        <ul>
+                            <li><a href="../projects/index.html">Projekty</a></li>
+                            <li><a href="./index.html">O mnie</a></li>
+                            <li><a href="../tech/index.html">Technologie</a></li>
+                            <li><a href="../contact/index.html">Kontakt</a></li>
+                        </ul>
                     </div>
-                    <div class="column">
-                        <div class="tabs is-fullwidth">
-                            <ul>
-                              <li><a href="../projects/index.html">Projekty</a></li>
-                              <li><a href="./index.html">O mnie</a></li>
-                              <li><a href="../tech/index.html">Technologie</a></li>
-                              <li><a href="../contact/index.html">Kontakt</a></li>
-                            </ul>
-                          </div>
-                    </div>
-                </div>   
-            </div>
-        </footer>
-    </body>
+                </div>
+            </div>   
+        </div>
+    </footer>
+</body>
 </html>

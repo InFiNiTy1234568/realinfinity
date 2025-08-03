@@ -1,0 +1,204 @@
+:root {
+    --primary: rgb(84, 57, 204);
+    --secondary: rgb(118, 75, 162);
+    --accent: rgba(255, 255, 255, 0.1);
+    --text: rgba(221, 221, 221, 0.565);
+}
+::-webkit-scrollbar {
+    background: var(--secondary);
+    width: 3px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    background: linear-gradient(to right, var(--primary) 0%, var(--secondary) 100%);
+}
+
+nav.navbar {
+    background-color: var(--accent);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    padding: 0.5rem 2rem;
+    animation: slideDown 0.9s ease-out 0.1s both;
+    opacity: 0;
+    transform: translateY(-20%);
+}
+.navbar-burger {
+    color: var(--accent) !important;
+}
+.navbar-burger:hover, .navbar-burger.is-active  {
+    color: #fff !important;
+    background: transparent !important;
+}
+a.navbar-item {
+    color: #eee;
+    opacity: 0;
+    transform: translateY(30%);
+    animation: slideUp 0.9s ease-out both;
+    animation-delay: calc(0.9s + var(--index, 0) * 0.1s);
+}
+a.navbar-item:hover, a.navbar-item:focus-within, a.navbar-item:focus {
+    background-color: transparent !important;
+    color: var(--text)
+}
+a.button.is-light {
+    background-color: transparent;
+    color: #eee;
+}
+a.button.is-light::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--primary);
+  
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+a.button:hover::after {
+    width: 100%;
+}
+a.button:hover {
+
+    border: 1px solid var(--primary) !important;
+}
+.tag.is-light, .box.has-background-light, .footer.has-background-light {
+    background-color: var(--accent) !important;
+}
+.box:first {
+    height: 100% !important;
+}
+.box.has-background-light {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeScale 0.8s 0.3s ease-out forwards;
+    animation-delay: calc(0.9s + var(--box-index, 0) * 0.1s);
+}
+
+.tag.is-light {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeup 0.6s 0.8s ease-out forwards;
+    animation-delay: calc(0.9s + var(--tag-index, 0) * 0.1s);
+}
+
+.footer.has-background-light {
+    animation: bounceIn 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+.brands-container {
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    background: rgb(84, 57, 204);
+    border-radius: 12px;
+    border: 1px solid rgba(84, 57, 204, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+    animation: fadeScale 0.8s 0.1s ease-in-out both;
+    animation-delay: calc(0.9s + var(--brands-index, 0) * 0.1s);
+}
+.tabs ul {
+    border-bottom: none !important;
+}
+#nav.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: slideDown 0.3s 0.1s ease-in-out forwards;
+}
+#nav.sticky > .container > nav.navbar {
+    background-color: rgba(0,0,0,0.7) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px);
+}
+#nav.exit {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideUp 0.3s 0.1s ease-in-out forwards;
+}
+
+/* Avatar tweak ( to make it bigger, more visible and also rounded ) */
+#avatar img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 100%;
+    width: 100%;
+}
+#hero-avatar {
+    margin: 0 auto;
+}
+#username {
+    background: linear-gradient(to right, var(--text) 0%, var(--primary) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Animations & stuff */
+@media screen and (max-width: 1023px) {
+    nav.navbar {
+        padding: 0.25rem;
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+    }
+    a.navbar-item {
+        opacity: 1;
+        transform: translateY(0);
+        animation: none !important;
+    }
+    .navbar-menu {
+        height: 0;
+        overflow-y: hidden;
+        opacity: 0;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        transition: height 0.4s ease opacity 0.4 ease;
+    }
+    .navbar-menu.is-active {
+        height: 220px;
+        opacity: 1;
+        transition: height 0.4s ease opacity 0.4s ease;
+    }
+}
+@keyframes slideDown {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideUp {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeScale {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeup {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    50% { transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

@@ -1,237 +1,208 @@
 <!DOCTYPE html>
-<html lang="pl" data-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InFiNiTy - who the fuck am I?</title>
-    <script src="https://kit.fontawesome.com/eae8f83d5b.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="assets/images/avatar/infinity.png" type="image/x-icon">
     <meta name="description" content="Cześć, nazywam się Karol, w sieci znany pod wieloma nickami ( InFiNiTy, Neo, Nobody, Limitless ). Z zawodu jestem informatykiem, jednak moją główną pasją jest programowanie. W wolnym czasie lubię również relaks przy muzyce lub sport we wszelkiej postaci.">
     <meta name="keywords" content="InFiNiTy, Neo, Nobody, Limitless, Karol, programista, informatyka, Discord Bot Developer, JavaScript, Node.js, MongoDB, MySQL">
     <meta name="author" content="InFiNiTy">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#5439cc">
-    <link rel="stylesheet" href="assets/styles/index.css">
-    <link rel="stylesheet" href="assets/styles/reset.css">
+    <title>InFiNiTy | Portfolio</title>
+    <link rel="icon" href="assets/img/avatar/infinity.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-    <script src="assets/scripts/index.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/eae8f83d5b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section class="section">
+    <section class="section" id="nav">
         <div class="container">
-            <nav class="navbar" role="navigation" aria-label="main navigation">
+            <nav class="navbar">
                 <div class="navbar-brand">
-                    <a id="avatar" class="navbar-item" href="./">
-                        <img src="assets/images/avatar/infinity.png" alt="InFiNiTy">
+                    <a id="avatar" href="./index.html" class="navbar-item">
+                        <img src="assets/img/avatar/infinity.png" alt="InFiNiTy's avatar">
                     </a>
-                    
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <a role="button" class="navbar-burger" data-target="main-nav">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                     </a>
                 </div>
-                
-                <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-menu" id="main-nav">
                     <div class="navbar-end">
-                        <a class="navbar-item" href="./index.html">
+                        <a href="./index.html" class="navbar-item">
                             Strona główna
                         </a>
-                        
-                        <a class="navbar-item" href="./projects/index.html">
+                        <a href="./about/index.html" class="navbar-item">
+                            O mnie
+                        </a>
+                        <a href="./projects/index.html" class="navbar-item">
                             Projekty
                         </a>
-                        
-                        <div class="navbar-item has-dropdown">
-                            <a class="navbar-link">
-                                Więcej
-                            </a>
-                            
-                            <div class="navbar-dropdown is-right">
-                                <a class="navbar-item" href="./about/index.html">
-                                    <span class="icon">
-                                        <i class="fa-solid fa-user"></i>
-                                    </span>
-                                    O mnie
-                                </a>
-                                <a class="navbar-item" href="./tech/index.html">
-                                    <span class="icon">
-                                        <i class="fa-solid fa-code"></i>
-                                    </span>
-                                    Technologie
-                                </a>
-                                <a class="navbar-item" href="./contact/index.html">
-                                    <span class="icon">
-                                        <i class="fa-solid fa-at"></i>
-                                    </span>
-                                    Kontakt
-                                </a>
-                                <hr class="navbar-divider">
-                                <a class="navbar-item has-text-danger" href="mailto:realinfinity2003@gmail.com">
-                                    <span class="icon">
-                                        <i class="fa-solid fa-bug"></i>
-                                    </span>
-                                    Zgłoś błąd / podatność
-                                </a>
-                            </div>
-                        </div>
+                        <a href="./tech/index.html" class="navbar-item">
+                            Technologie
+                        </a>
+                        <a href="./contact/index.html" class="navbar-item">
+                            Kontakt
+                        </a>
                     </div>
                 </div>
             </nav>
         </div>
     </section>
-    <section class="section">
-        <div class="container">
-                <div class="grid">
-                    <div class="cell" id="intro">
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <figure class="image is-64x64">
-                                            <img class="is-rounded" src="assets/images/avatar/infinity.png" alt="InFiNiTy">
-                                        </figure>
-                                    </div>
-                                    <div class="media-content">
-                                        <p class="title is-4">InFiNiTy</p>
-                                        <p class="subtitle is-6">@realinfinity</p>
-                                    </div>
-                                </div>
-                                <div class="tags">
-                                    <span class="tag"><img src="assets/images/games/mc.png" width="20" height="20" alt="Minecraft">&nbsp;Minecraft</span>
-                                    <span class="tag"><img src="assets/images/games/cstrike.png" width="20" height="20" alt="Counter-Strike 1.6">&nbsp;Counter-Strike 1.6</span>
-                                    <span class="tag"><img src="assets/images/games/valorant.png" width="20" height="20" alt="Valorant">&nbsp;Valorant</span>
-                                    <span class="tag"><img src="assets/images/games/gtav.png" width="20" height="20" alt="Grand Theft Auto V">&nbsp;Grand Theft Auto V</span>
-                                    <span class="tag"><img src="assets/images/games/gd.png" width="20" height="20" alt="Geometry Dash">&nbsp;Geometry Dash</span>
-                                    <span class="tag"><i style="color: #5439cc;" class="fas fa-code"></i>&nbsp;Vibe Coder</span>
-                                    <span class="tag"><i style="color: #5439cc;" class="fas fa-headphones"></i>&nbsp;Music enjoyer</span>
-
-    
-                                </div>
-                                
-                                <div class="content">
-                                    Cześć, nazywam się Karol i mam 22 lata. W sieci znany jestem pod wieloma nickami ( InFiNiTy, Neo, Nobody, Limitless, Synyxe ). Uwielbiam grać we wszelkiego rodzaju gry, jednak specyficznie podobają mi się gry MMORPG/MOBA/FPS. Uwielbiam również słuchać muzyki, nie przebierając w gatunkach, jednak najbardziej lubię słuchać muzyki w stylu remixów bass boost, techno oraz EDM.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cell" id="bio">
-                        <div class="box">
-                            <div class="content">
-                                <h1 class="title is-5">
-                                    <span class="icon">
-                                        <i class="fa-solid fa-question"></i>
-                                    </span>&nbsp;Kim jestem, czym się zajmuję?
-                                </h1>
-                                <p>
-                                    Z zawodu jestem informatykiem, jednak moją główną pasją jest programowanie. Określiłbym siebie bardziej jako vibe codera, który lubi nowe wyzwania i chętnie się uczy. Nie pracuję w zawodzie, ani nie spełniam swojego hobby w celach zarobkowych.
-                                    <br><br>
-                                    Obecnie zajmuję się tworzeniem nowej wersji aplikacji na platformę Discord, która będzie miała nowy design i nowe funkcje, oraz zostanie rozszerzona o system Premium. Ponadto planuję stworzenie własnej sieci serwerów gier, zrzeszających graczy z całej Polski. Jest to zaledwie kropla w morzu moich marzeń do spełnienia i bardzo liczę na to że uda mi się zrealizować większość z nich.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fixed-grid has-2-cols" id="social-media">
-                        <div class="box">
-                            <h1 class="title is-5">
-                                <span class="icon">
-                                    <i class="fa-solid fa-link"></i>
-                                </span>&nbsp;Moje social media
-                            </h1>
-                            <div class="grid">
-                                <div class="cell">
-                                    <div class="box has-text-centered">
-                                        <a class="has-text-white" href="https://discord.com/users/918150003048984616" title="Discord">
-                                            <img src="assets/images/brands/discord.png" width="64" height="64" alt="Discord">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="cell">
-                                    <div class="box has-text-centered">
-                                        <a class="has-text-white" title="GitHub" href="https://github.com/InFiNiTy1234568">
-                                            <i class="fa-brands fa-github fa-4x"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="cell">
-                                    <div class="box has-text-centered">
-                                        <a class="has-text-white" title="Spotify" href="https://open.spotify.com/user/315pus52kjbaxynjlow2a3knuvjq?si=bdd96476081d484b">
-                                            <img src="assets/images/brands/spotify.png" width="64" height="64" alt="Spotify">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="cell">
-                                    <div class="box has-text-centered">
-                                        <a class="has-text-white" title="Steam" href="https://steamcommunity.com/profiles/76561199756958573/">
-                                            <i class="fa-brands fa-steam fa-4x"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="cell">
-                                    <div class="box has-text-centered">
-                                        <a class="has-text-white" title="TikTok" href="https://www.tiktok.com/@realinfinity7323">
-                                            <i class="fa-brands fa-tiktok fa-4x"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="cell">
-                                    <div class="box has-text-centered">
-                                        <a title="Wyślij mi e-maila!" class="has-text-white" href="mailto:realinfinity2003@gmail.com">
-                                            <i class="fas fa-at fa-4x"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </section>
-    <section class="section" id="new-project">
-        <div class="container">
-            <div class="columns is-multiline is-vcentered">
-                <div class="column is-9-desktop has-text-centered-mobile">
-                        <h1 class="title is-4">Szukasz bota Discord stworzonego specjalnie na potrzeby Twojego projektu?</h1> 
-                    <div class="block">
-                        <p class="subtitle is-6">
-                            Jeśli tak, to trafiłeś w odpowiednie miejsce! Zapraszam do kontaktu mailowego lub Discord.
-                        </p>
-                    </div>
-                </div>
-                <div class="column has-text-right-desktop has-text-centered-mobile">
-                    <a href="./contact/index.html" class="button" id="get-started">
-                        <span>
-                            Zaczynajmy!
-                        </span>
-                        <span class="icon is-right">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer has-text-centered-mobile">
+    <section class="section has-text-centered">
         <div class="container">
             <div class="columns is-vcentered">
                 <div class="column">
-                    <p class="has-text-white">
-                        Wykonanie: <a href="https://discord.com/users/918150003048984616"><strong>InFiNiTy</strong></a> &copy; 2025 Wszelkie prawa zastrzeżone.
-                    </p>
+                    <div class="box has-background-light">
+                        <div class="block">
+                            <figure id="hero-avatar" class="image is-128x128">
+                                <img class="is-rounded" src="assets/img/avatar/infinity.png" alt="InFiNiTy's avatar">
+                            </figure>
+                        </div>
+                        <div class="block">
+                            <h1 id="username" class="title is-1">
+                                InFiNiTy
+                            </h1>
+                            <p class="subtitle is-4">
+                                Zwykły człowiek w Internecie
+                            </p>
+                        </div>
+                        <div class="tags has-text-white are-medium is-centered">
+                            <span class="tag is-rounded is-light"><img src="assets/img/games/mc.png" width="20" height="20" alt="Minecraft">&nbsp;Minecraft</span>
+                            <span class="tag is-rounded is-light"><img src="assets/img/games/cstrike.png" width="20" height="20" alt="Counter-Strike 1.6">&nbsp;Counter-Strike 1.6</span>
+                            <span class="tag is-rounded is-light"><img src="assets/img/games/valorant.png" width="20" height="20" alt="Valorant">&nbsp;Valorant</span>
+                            <span class="tag is-rounded is-light"><img src="assets/img/games/gtav.png" width="20" height="20" alt="Grand Theft Auto V">&nbsp;Grand Theft Auto V</span>
+                            <span class="tag is-rounded is-light"><img src="assets/img/games/gd.png" width="20" height="20" alt="Geometry Dash">&nbsp;Geometry Dash</span>
+                            <span class="tag is-rounded is-light"><i style="color: var(--primary);" class="fas fa-code"></i>&nbsp;Vibe coder</span>
+                            <span class="tag is-rounded is-light"><i style="color: var(--primary);" class="fas fa-headphones"></i>&nbsp;Music enjoyer</span>
+                            <span class="tag is-rounded is-light"><i style="color: var(--primary)" class="fab fa-windows"></i>&nbsp;Windows</span>
+                            <span class="tag is-rounded is-light"><i style="color: var(--primary)" class="fab fa-android"></i>&nbsp;Android</span>
+
+                        </div>
+                        <div class="buttons is-centered">
+                            <a href="#about" class="button is-light is-outlined">
+                                <span>
+                                    Poznaj mnie lepiej
+                                </span>
+                                <span class="icon">
+                                    <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </a>
+                            <a href="" class="button is-light is-outlined">
+                                <span>
+                                    Kontakt
+                                </span>
+                                <span class="icon">
+                                    <i class="fa fa-paper-plane"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="column">
-                    <div class="tabs is-fullwidth">
-                        <ul>
-                          <li><a href="./projects/index.html">Projekty</a></li>
-                          <li><a href="./about/index.html">O mnie</a></li>
-                          <li><a href="./tech/index.html">Technologie</a></li>
-                          <li><a href="./contact/index.html">Kontakt</a></li>
-                        </ul>
-                      </div>
+                    <div class="box has-text-left has-background-light">
+                        <h2 class="title is-6">Witaj na moim portfolio! 👋</h2>
+                        <div class="content">
+                            Cześć, nazywam się Karol i mam 22 lata. W sieci znany jestem pod wieloma nickami ( InFiNiTy, Neo, Nobody, Limitless, Synyxe ). Uwielbiam grać we wszelkiego rodzaju gry, jednak specyficznie podobają mi się gry MMORPG/MOBA/FPS. Uwielbiam również słuchać muzyki, nie przebierając w gatunkach, jednak najbardziej lubię słuchać muzyki w stylu remixów bass boost, techno oraz EDM.
+                        </div>
+                    </div>
+                    <div class="box has-text-left has-background-light">
+                        <h2 class="title is-6">Kim jestem, czym się zajmuję? 🤔</h2>
+                        <div class="content">
+                            Z zawodu jestem informatykiem, jednak moją główną pasją jest programowanie. Określiłbym siebie bardziej jako vibe codera, który lubi nowe wyzwania i chętnie się uczy. Nie pracuję w zawodzie, ani nie spełniam swojego hobby w celach zarobkowych.
+
+Obecnie zajmuję się tworzeniem nowej wersji aplikacji na platformę Discord, która będzie miała nowy design i nowe funkcje, oraz zostanie rozszerzona o system Premium. Ponadto planuję stworzenie własnej sieci serwerów gier, zrzeszających graczy z całej Polski. Jest to zaledwie kropla w morzu moich marzeń do spełnienia i bardzo liczę na to że uda mi się zrealizować większość z nich.
+                        </div>
+                    </div>
                 </div>
-            </div>   
+            </div>
+            <div class="columns is-mobile is-multiline">
+                <div class="column is-half-mobile">
+                    <div class="box has-text-centered has-background-light">
+                        <a href="https://discord.com/users/918150003048984616" class="has-text-white">
+                            <div class="brands-container">
+                                <i class="fab fa-discord fa-2x"></i>
+                            </div>
+                            Discord
+                        </a>
+                    </div>
+                </div>
+                <div class="column is-half-mobile">
+                    <div class="box has-text-centered has-background-light">
+                        <a href="https://github.com/InFiNiTy1234568" class="has-text-white">
+                            <div class="brands-container">
+                                <i class="fab fa-github fa-2x"></i>
+                            </div>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="column is-half-mobile">
+                    <div class="box has-text-centered has-background-light">
+                        <a href="https://open.spotify.com/user/315pus52kjbaxynjlow2a3knuvjq?si=bdd96476081d484b" class="has-text-white">
+                            <div class="brands-container">
+                                <i class="fab fa-spotify fa-2x"></i>
+                            </div>
+                            Spotify
+                        </a>
+                    </div>
+                </div>
+                <div class="column is-half-mobile">
+                    <div class="box has-text-centered has-background-light">
+                        <a href="https://steamcommunity.com/profiles/76561199756958573/" class="has-text-white">
+                            <div class="brands-container">
+                                <i class="fab fa-steam fa-2x"></i>
+                            </div>
+                            Steam
+                        </a>
+                    </div>
+                </div>
+                <div class="column is-half-mobile">
+                    <div class="box has-text-centered has-background-light">
+                        <a href="https://www.tiktok.com/@realinfinity7323" class="has-text-white">
+                            <div class="brands-container">
+                                <i class="fab fa-tiktok fa-2x"></i>
+                            </div>
+                            TikTok
+                        </a>
+                    </div>
+                </div>
+                <div class="column is-half-mobile">
+                    <div class="box has-text-centered has-background-light">
+                        <a href="mailto:realinfinity2003@gmail.com" class="has-text-white">
+                            <div class="brands-container">
+                                <i class="fa fa-envelope fa-2x"></i>
+                            </div>
+                            E-mail
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
+    <footer class="footer has-text-centered-mobile has-background-light">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <p class="has-text-white">
+                            Wykonanie: <a href="https://discord.com/users/918150003048984616"><strong>InFiNiTy</strong></a> © 2025 Wszelkie prawa zastrzeżone.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <div class="tabs is-fullwidth">
+                            <ul>
+                              <li><a href="./projects/index.html">Projekty</a></li>
+                              <li><a href="./about/index.html">O mnie</a></li>
+                              <li><a href="./tech/index.html">Technologie</a></li>
+                              <li><a href="./contact/index.html">Kontakt</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>   
+            </div>
+        </footer>
 </body>
 </html>
