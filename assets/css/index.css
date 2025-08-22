@@ -39,6 +39,9 @@ nav.navbar {
     color: #fff !important;
     background: transparent !important;
 }
+a:link {
+    filter: brightness(1.2);
+}
 a.navbar-item {
     color: #eee;
     opacity: 0;
@@ -71,10 +74,9 @@ a.button:hover::after {
     width: 100%;
 }
 a.button:hover {
-
     border: 1px solid var(--primary) !important;
 }
-.tag.is-light, .box.has-background-light, .footer.has-background-light {
+.tag.is-light, .box.has-background-light, .footer.has-background-light, .card.has-background-light {
     background-color: var(--accent) !important;
 }
 .box:first {
@@ -86,7 +88,26 @@ a.button:hover {
     animation: fadeScale 0.8s ease-out forwards;
     animation-delay: calc(0.4s + var(--box-index, 0) * 0.1s);
 }
+progress.progress {
+    width: 100%;
+    
+    animation: progressBar 0.9s ease forwards;
+    transform-origin: left;
+}
 
+
+@keyframes progressBar {
+    0% {
+        width: 0;
+        --bulma-progress-bar-background-color: rgba(0, 0, 0, 0);
+        --bulma-progress-value-background-color: transparent;
+    }
+    100% {
+        width: 100%;
+        --bulma-progress-bar-background-color: rgba(0, 0, 0, 0.1);
+        --bulma-progress-value-background-color: var(--bulma-light);
+    }
+}
 .tag.is-light {
     opacity: 0;
     transform: translateY(50px);
@@ -97,7 +118,7 @@ a.button:hover {
 .footer.has-background-light {
     animation: bounceIn 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
-.brands-container {
+.icon-container {
     flex-shrink: 0;
     width: 70px;
     height: 70px;
@@ -107,9 +128,12 @@ a.button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px auto;
     animation: fadeScale 0.6s ease-in-out both;
-    animation-delay: calc(0.4s + var(--brands-index, 0) * 0.08s);
+    animation-delay: calc(0.4s + var(--icon-index, 0) * 0.08s);
+    transition: all 0.3s ease;
+}
+.icon-container.is-centered {
+    margin: 5px auto;
 }
 .tabs ul {
     border-bottom: none !important;
@@ -134,7 +158,10 @@ a.button:hover {
     transform: translateY(-50px);
     animation: slideUp 0.25s ease-in-out forwards;
 }
-
+#socials-container > .column > .box > a:link.has-text-white:hover > .icon-container {
+    transform: scale(1.2) !important;
+    transition: all 0.3s ease;
+}
 /* Avatar tweak ( to make it bigger, more visible and also rounded ) */
 #avatar img {
     max-width: 50px;
@@ -150,6 +177,7 @@ a.button:hover {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    filter: brightness(1.2);
 }
 
 /* Animations & stuff */
@@ -203,4 +231,48 @@ a.button:hover {
     0% { opacity: 0; transform: translateY(-20px); }
     50% { transform: translateY(10px); }
     100% { opacity: 1; transform: translateY(0); }
+}
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@supports not (backdrop-filter: blur(10px)) {
+    .glass {
+        background: rgba(255, 255, 255, 0.9);
+    }
+}
+#final > .column > .box, #future > .column > .box, #in-progress > .column > .box {
+    padding: 0 !important;
+    background-position: center center;
+    background-size: cover;
+    backdrop-filter: blur(10px) !important;
+}
+#future > .column > .box > .block, #final > .column > .box > .block, #in-progress > .column > .box > .block {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    padding: 4rem !important;
+    margin: 0;
+    border-radius: 10px;
+}
+#future > .column > .box {
+    background-image: url('../img/projects/mystery.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+#in-progress > .column > #portfolio {
+    background-image: url('../img/projects/portfolio.png');
+}
+#in-progress > .column > #universe {
+    background-image: url('../img/projects/universe.png');
+}
+#final > .column > #reyo {
+    background-image: url('../img/projects/reyo_bio.png');
+}
+#final > .column #luigi {
+    background-image: url('../img/projects/luigi.png');
 }

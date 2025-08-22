@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
             e.removeAttribute('style')
         }, 2000)
     })
-    document.querySelectorAll('.brands-container').forEach((e, k) => {
-        e.setAttribute('style', `--brand-index: ${k}`)
+    document.querySelectorAll('.icon-container').forEach((e, k) => {
+        e.setAttribute('style', `--icon-index: ${k}`)
         setTimeout(() => {
             e.removeAttribute('style')
         }, 2000)
