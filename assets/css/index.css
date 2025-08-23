@@ -39,6 +39,9 @@ nav.navbar {
     color: #fff !important;
     background: transparent !important;
 }
+ul > li > a {
+    color: var(--text);
+}
 a:link {
     filter: brightness(1.2);
 }
