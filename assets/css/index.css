@@ -59,7 +59,7 @@ a.navbar-item:hover, a.navbar-item:focus-within, a.navbar-item:focus {
 }
 a.button.is-light {
     background-color: transparent;
-    color: #eee;
+    color: #242429
 }
 a.button.is-light::after {
   content: "";
@@ -141,12 +141,15 @@ progress.progress {
 .tabs ul {
     border-bottom: none !important;
 }
+#nav {
+    padding: 1.5rem !important;
+}
 #nav.sticky {
     position: sticky;
     top: 0;
     z-index: 1;
     width: 100%;
-    transform: translateY(-50px);
+    transform: translateY(-30px);
     opacity: 0;
     animation: slideDown 0.25s ease-in-out forwards;
 }
@@ -167,8 +170,8 @@ progress.progress {
 }
 /* Avatar tweak ( to make it bigger, more visible and also rounded ) */
 #avatar img {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 40px;
+    max-height: 40px;
     border-radius: 100%;
     width: 100%;
 }
@@ -186,7 +189,7 @@ progress.progress {
 /* Animations & stuff */
 @media screen and (max-width: 1023px) {
     nav.navbar {
-        padding: 0.25rem;
+        padding: 0.15rem;
         transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
     }
     a.navbar-item {
@@ -279,4 +282,3 @@ progress.progress {
 #final > .column #luigi {
     background-image: url('../img/projects/luigi.png');
 }
-
