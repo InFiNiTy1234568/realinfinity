@@ -40,7 +40,7 @@ nav.navbar {
     background: transparent !important;
 }
 .breadcrumb a {
-    color: var(--text);
+    color: var(--text) !important;
 }
 a:link {
     filter: brightness(1.2);
@@ -279,3 +279,4 @@ progress.progress {
 #final > .column #luigi {
     background-image: url('../img/projects/luigi.png');
 }
+
